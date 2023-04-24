@@ -21,10 +21,10 @@
                 ?>
 
                 <div class="carousel-item <?php if ($key == 0) { echo "active"; } ?>" data-bs-interval="10000">
-                    <img src="<?php echo $thumbnail_url ;?>" class="d-block w-100" alt="..."  style="height: 500px;">
-                    <div class="carousel-caption d-none d-md-block bg-white">
+                    <img src="<?php echo $thumbnail_url ;?>" class="d-block w-100" alt="..."  style="height: 500px; object-fit: cover; object-position: center;">
+                    <div class="carousel-caption d-block bg-white p-2">
                         <h5><?php echo $post->post_title; ?></h5>
-                        <p><?php echo wp_trim_words( $post->post_content, 20, '...' ); ?></p>
+                        <p><?php echo wp_trim_words( $post->post_content, 25, '...' ); ?></p>
                     </div>
                 </div>
 
