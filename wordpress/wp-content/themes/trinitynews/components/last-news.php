@@ -7,7 +7,7 @@
         $posts_per_page = 6;
 
         $paged = isset($_GET['page']) ? $_GET['page'] : '1';
-        
+
         $args = array(
             'post_type' => 'post',
             'post_status' => 'publish',
@@ -16,7 +16,7 @@
         );
         $posts = get_posts($args);
         $total_pages = ceil(wp_count_posts()->publish / $posts_per_page);
-        
+
         $pagination_args = array(
             'format' => '?page=%#%',
             'total' => $total_pages,
@@ -53,11 +53,9 @@
     </div>
 
     <div class="pagination d-flex justify-content-center mt-4">
-		<?php echo paginate_links($pagination_args); ?>
-	</div>
+        <?php echo paginate_links($pagination_args); ?>
+    </div>
 
     <?php wp_reset_postdata(); ?>
-	
-	
 
 </div>
