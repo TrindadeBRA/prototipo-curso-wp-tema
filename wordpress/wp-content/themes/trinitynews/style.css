@@ -6,3 +6,10 @@ Author URI: https://www.thetrinityweb.com.br/
 Description: Tema criado sem o uso de plugins
 Version: 1.0
 */
+
+/* Paginação */
+
+.page-numbers.current span {
+    background-color: #0d6efd !important;
+    color: #fff!important;
+}

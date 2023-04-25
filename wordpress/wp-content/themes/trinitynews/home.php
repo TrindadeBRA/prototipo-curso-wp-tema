@@ -1,7 +1,15 @@
-<?php get_header(); ?>
+<?php 
 
-<?php get_template_part( 'components/banner-carousel' ); ?>
+/**
+ * Template Name: Homepage 
+ * Descrição: Modelo para a home
+ */
 
+get_header(); 
 
+  get_template_part( 'components/banner-carousel' );
+  get_template_part( 'components/last-news' );
 
-<?php get_footer(); ?>
+get_footer();
+
+?>
