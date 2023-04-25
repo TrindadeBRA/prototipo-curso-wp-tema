@@ -1,5 +1,6 @@
 <?php get_header(); ?>
 
+<?php get_template_part( 'components/banner-single' ); ?>
 
 <main class="container">
   <div class="row">
