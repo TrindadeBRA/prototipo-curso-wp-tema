@@ -37,7 +37,9 @@
 
             <div class="col-12 col-sm-4 my-3">
                 <div class="card" style="width: 100%;">
+                <a href="<?php echo get_page_link($post); ?>">
                     <img src="<?php echo get_the_post_thumbnail_url($post, 'full'); ?>" class="card-img-top" alt="..." style="height: 200px; object-fit: cover; object-position: center;">
+                </a>
                     <div class="card-body">
                         <h5 class="card-title"><?php echo wp_trim_words($post->post_title, 4, '...'); ?></h5>
                         <p class="card-text"><?php echo wp_trim_words($post->post_content, 12, '...'); ?></p>
